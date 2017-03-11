@@ -1,0 +1,1 @@
+-layer.png con las img de background: facebook.png, cart.png
