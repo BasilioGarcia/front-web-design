@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Playfair+Display:400,700');
-
 @font-face{
     font-family:'icons';
     src:url('./fonts/icons.eot');
@@ -240,7 +239,7 @@ section.home{
 #home-promo li a.thumb{
     display: block;
     width: 100%;
-    height: 80px;
+    /*height: 80px;*/
     overflow: hidden;
 }
 #home-promo li a.thumb img:hover{
