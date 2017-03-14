@@ -117,6 +117,9 @@ header{
 #main-menu li.current a{
     color: hsla(5, 85%, 56%, 1);
 }
+#hamburger-menu{
+    display: none;
+}
 section{
     width: 100%;
     min-height: -webkit-calc(100% - 215px);
@@ -328,5 +331,12 @@ section.home{
     #home-promo li:first-of-type a.thumb img{
         width: 100%;
         max-width: 300px;
+    }
+}
+@media all and (max-width: 320px) {
+    #logo{
+        display: block;
+        width: 82px;
+        height: 50px;
     }
 }

@@ -17,7 +17,12 @@
             </ul>
         </nav>
         <header class="inner-layout">
-            <a href="#" id="logo"><img src="img/logo.png" alt="Inicio"></a>
+            <a href="#" id="logo">
+                <picture>
+                    <source srcset="img/logo-320.png" media="(max-width: 320px)">
+                    <img src="img/logo.png" alt="Inicio">
+                </picture>
+            </a>
             <nav id="main-menu">
                 <ul>
                     <li class="current"><a href="./index.html" rel="nofollow">Inicio</a></li>
@@ -28,6 +33,10 @@
                     <li><a href="./contact.html">Contacto</a></li>
                 </ul>
             </nav>
+            <div id="hamburger-menu">
+                <input type="checkbox"/>
+                <label for="nav-trigger"></label>
+            </div>
         </header>
         <section class="home">
             <article class="home-layout">
