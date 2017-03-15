@@ -1,4 +1,5 @@
 -layer.png con las img de background: facebook.png, cart.png
--descripción de características: 
+-descripción de características:
     ºweb a doble columna
     ºestruccturación correcta de datos ajena al diseño
+    ºhamburger menu con css puro
