@@ -386,7 +386,7 @@ section.home{
         position: absolute;
         width: 180px;
         height: auto;
-        background: #000;
+        background: hsla(185, 22%, 90%, 1);
         top: 0;
         z-index: 0;
         float: right;
@@ -397,15 +397,11 @@ section.home{
     }
     #main-menu li{
         float: none;
+        padding: 5px 0 0 30px;
+        font-size: 3em;
     }
     #main-menu li a:hover{
-        color: #FFF;
-    }
-    section{
-        position: relative;
-        top: 50px;
-        right: 0;
-        z-index: 1;
+        color: #000;
     }
     #hamburger-menu + label, section, #social-menu ul, header #main-menu{
         transition: right 0.2s;
@@ -417,21 +413,28 @@ section.home{
         right: 200px;
         box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
     }
-    footer{
-        position: relative;
-        z-index: 4;
-        top: 45px;
+    article{
+        display: none !important;
     }
     /* RESET-HARD */
     section{
+        top: 50px;
         width: 100%;
-        min-height: -webkit-calc(100% - 75px);
-        min-height: -moz-calc(100% - 75px);
-        min-height: calc(100% - 75px);
+        position: relative;
+        right: 0;
+        z-index: 1;
+        min-height: -webkit-calc(100% - 80px);
+        min-height: -moz-calc(100% - 80px);
+        min-height: calc(100% - 80px);
         background: hsla(0, 0%, 100%, 1);
     }
     section.home{
         background: hsla(0, 0%, 100%, 1);
+    }
+    footer{
+        position: relative;
+        z-index: 4;
+        top: 50px;
     }
     article{
         overflow: auto;
