@@ -337,16 +337,18 @@ section.home{
     #social-menu{
         padding-top: 10px;
         height: 35px;
+        position: fixed;
     }
     #social-menu .fb{
-        margin-right: 10px;
+        margin-right: 55px;
     }
     #logo{
         display: block;
         width: 82px;
         height: 50px;
-        margin-top: -47px;
+        margin-top: -3px;
         margin-left: 10px;
+        position: fixed;
     }
     #hamburger-menu{
         display: block;
@@ -354,27 +356,39 @@ section.home{
         right: 80px;
         top: 40px;
         z-index: 3;
-        /*clip-path: inset(0, 0, 0, 0);*/
+        clip-path: inset(20px 20px);
     }
     header{
+        position: inherit;
         padding-top: 5px;
+        overflow: hidden;
     }
     label[for="hamburger-menu"]{
+        display: block;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
         position: fixed;
-        right: 20px;
-        top: 60px;
+        right: 15px;
+        top: 10px;
         z-index: 2;
+        background: no-repeat url("../img/hamburger.png") left top;
+    }
+    label[for="hamburger-menu"]:hover{
+        background: no-repeat url("../img/hamburger.png") -25px top;
     }
     #main-menu{
+        width: 180px;
+        background: #000;
         top: 0;
         bottom: 0;
-        right: 0;
+        right: -180px;
         z-index: 0;
     }
     #main-menu li{
         float: none;
     }
-    section, footer/*, #hamburger-menu, label[for="hamburger-menu"]*/{
+    section, footer/*, #social-menu ul, #hamburger-menu, label[for="hamburger-menu"]*/{
         display: none;
     }
     section{
@@ -384,14 +398,17 @@ section.home{
         left: 0;
         z-index: 1;*/
     }
-    #hamburger-menu + label, section{
-        transition: left 0.2s;
+    #hamburger-menu + label, section, #social-menu ul, header #main-menu{
+        transition: right 0.2s;
     }
     #hamburger-menu:checked + label{
-        right: 215px;
+        right: 190px;
     }
     #hamburger-menu:checked ~ #social-menu ul{
-        right: 200px;
+        display: none;
+    }
+    #hamburger-menu:checked ~ header #main-menu{
+        right: 0;
     }
     #hamburger-menu:checked ~ section {
         left: -200px;
