@@ -334,34 +334,13 @@ section.home{
     }
 }
 @media all and (max-width: 320px) {
-    #social-menu{
-        padding-top: 10px;
-        height: 35px;
-        position: fixed;
-    }
-    #social-menu .fb{
-        margin-right: 55px;
-    }
-    #logo{
-        display: block;
-        width: 82px;
-        height: 50px;
-        margin-top: -3px;
-        margin-left: 10px;
-        position: fixed;
-    }
     #hamburger-menu{
         display: block;
         position: absolute;
         right: 80px;
         top: 40px;
-        z-index: 3;
+        z-index: 4;
         clip-path: inset(20px 20px);
-    }
-    header{
-        position: inherit;
-        padding-top: 5px;
-        overflow: hidden;
     }
     label[for="hamburger-menu"]{
         display: block;
@@ -371,47 +350,92 @@ section.home{
         position: fixed;
         right: 15px;
         top: 10px;
-        z-index: 2;
+        z-index: 3;
         background: no-repeat url("../img/hamburger.png") left top;
     }
     label[for="hamburger-menu"]:hover{
         background: no-repeat url("../img/hamburger.png") -25px top;
     }
+    #social-menu{
+        padding-top: 10px;
+        height: 35px;
+        position: fixed;
+        z-index: 2;
+    }
+    #social-menu .fb{
+        margin-right: 55px;
+    }
+    #logo{
+        display: block;
+        width: 82px;
+        height: 50px;
+        margin-top: -43px;
+        margin-left: 10px;
+        position: fixed;
+    }
+    header{
+        height: calc(100% - 30px);
+        max-width: 100%;
+        position: fixed;
+        padding-top: 0px;
+        overflow: hidden;
+        top: 45px;
+        z-index: 3;
+    }
     #main-menu{
+        position: absolute;
         width: 180px;
+        height: auto;
         background: #000;
         top: 0;
-        bottom: 0;
-        right: -180px;
         z-index: 0;
+        float: right;
+        right: -180px;
+    }
+    #main-menu ul{
+        overflow: auto;
     }
     #main-menu li{
         float: none;
     }
-    section, footer/*, #social-menu ul, #hamburger-menu, label[for="hamburger-menu"]*/{
-        display: none;
+    #main-menu li a:hover{
+        color: #FFF;
     }
     section{
-        /*position: relative;
-        top: 0;
-        bottom: 100%;
-        left: 0;
-        z-index: 1;*/
+        position: relative;
+        top: 50px;
+        right: 0;
+        z-index: 1;
     }
     #hamburger-menu + label, section, #social-menu ul, header #main-menu{
         transition: right 0.2s;
-    }
-    #hamburger-menu:checked + label{
-        right: 190px;
-    }
-    #hamburger-menu:checked ~ #social-menu ul{
-        display: none;
     }
     #hamburger-menu:checked ~ header #main-menu{
         right: 0;
     }
     #hamburger-menu:checked ~ section {
-        left: -200px;
+        right: 200px;
         box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    }
+    footer{
+        position: relative;
+        z-index: 4;
+        top: 45px;
+    }
+    /* RESET-HARD */
+    section{
+        width: 100%;
+        min-height: -webkit-calc(100% - 75px);
+        min-height: -moz-calc(100% - 75px);
+        min-height: calc(100% - 75px);
+        background: hsla(0, 0%, 100%, 1);
+    }
+    section.home{
+        background: hsla(0, 0%, 100%, 1);
+    }
+    article{
+        overflow: auto;
+        height: 100%;
+        position: relative;
     }
 }
