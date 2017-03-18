@@ -413,9 +413,6 @@ section.home{
         right: 200px;
         box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
     }
-    article{
-        display: none !important;
-    }
     /* RESET-HARD */
     section{
         top: 50px;
@@ -430,6 +427,13 @@ section.home{
     }
     section.home{
         background: hsla(0, 0%, 100%, 1);
+    }
+    .home-layout{
+        padding: 0px;
+    }
+    #home-right-column{
+        position: relative;
+        width: 100%;
     }
     footer{
         position: relative;
