@@ -3,3 +3,4 @@
     ºweb a doble columna
     ºestruccturación correcta de datos ajena al diseño
     ºhamburger menu con css puro
+    ºdiseño alternativo (dorado)

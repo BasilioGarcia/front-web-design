@@ -456,4 +456,11 @@ section.home{
         height: 100%;
         position: relative;
     }
+    .hack{
+        width: 100%;
+        min-height: -webkit-calc(100% - 75px);
+        min-height: -moz-calc(100% - 75px);
+        min-height: calc(100% - 75px);
+        background: hsla(0, 0%, 100%, 1);
+    }
 }
