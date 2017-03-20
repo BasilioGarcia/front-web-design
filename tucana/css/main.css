@@ -463,4 +463,25 @@ section.home{
         min-height: calc(100% - 75px);
         background: hsla(0, 0%, 100%, 1);
     }
+    .hack2{
+        width: 100%;
+        min-height: -webkit-calc(100% - 75px);
+        min-height: -moz-calc(100% - 75px);
+        min-height: calc(100% - 75px);
+        background: hsla(0, 0%, 100%, 1);
+    }
+    .hack3{
+        width: 100%;
+        min-height: -webkit-calc(100% - 75px);
+        min-height: -moz-calc(100% - 75px);
+        min-height: calc(100% - 75px);
+        background: hsla(0, 0%, 100%, 1);
+    }
+    .hack4{
+        width: 100%;
+        min-height: -webkit-calc(100% - 75px);
+        min-height: -moz-calc(100% - 75px);
+        min-height: calc(100% - 75px);
+        background: hsla(0, 0%, 100%, 1);
+    }
 }
