@@ -334,6 +334,12 @@ section.home{
     }
 }
 @media all and (min-width: 320px) and (max-width: 799px) {
+    .inner-layout{
+        min-width: 100%;
+    }
+    .home-layout {
+        min-width: 100%;
+    }
     #hamburger-menu{
         display: block;
         position: absolute;
@@ -496,15 +502,6 @@ section.home{
         overflow: auto;
         height: 100%;
         position: relative;
-    }
-
-}
-@media all and (max-width: 414px) {
-    .inner-layout{
-        min-width: 414px;
-    }
-    .home-layout {
-        min-width: 414px;
     }
 
 }
