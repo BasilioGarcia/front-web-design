@@ -470,6 +470,31 @@ section.home{
     #home-promo li p{
         margin-top: 10px;
     }
+    
+    /* ESTO */
+    /*#home-promo li:first-of-type a.thumb{
+        max-width: none;
+        max-height: 200px;
+        text-align: right;
+        background: -webkit-linear-gradient(left, transparent 0%, hsla(195, 13%, 53%, 1) 40%);
+        background: -o-linear-gradient(right, transparent 0%, hsla(195, 13%, 53%, 1) 40%);
+        background: -moz-linear-gradient(right, transparent 0%, hsla(195, 13%, 53%, 1) 40%);
+        background: linear-gradient(to right, transparent 0%, hsla(195, 13%, 53%, 1) 40%);
+    }
+    #home-promo li:first-of-type a.thumb:hover{
+        background: -webkit-linear-gradient(left, transparent 0%, hsla(0, 0%, 60%, 1) 40%);
+        background: -o-linear-gradient(right, transparent 0%, hsla(0, 0%, 60%, 1) 40%);
+        background: -moz-linear-gradient(right, transparent 0%, hsla(0, 0%, 60%, 1) 40%);
+        background: linear-gradient(to right, transparent 0%, hsla(0, 0%, 60%, 1) 40%);
+    }
+    #home-promo li:first-of-type a.thumb img{
+        width: 100%;
+        max-width: 300px;
+    }*/
+    
+    
+    
+    
     #home-left-column{
         width: calc(100% - 23px);
         float: none;
