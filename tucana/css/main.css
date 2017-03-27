@@ -486,8 +486,8 @@ section.home{
         background: linear-gradient(to right, hsla(0, 0%, 60%, 1) 40%, transparent 120%);
     }
     #home-promo li a.thumb img{
-        width: 100%;
-        max-width: 300px;
+        width: auto;
+        /*max-width: 300px;*/
     }
     #home-left-column{
         width: calc(100% - 23px);
