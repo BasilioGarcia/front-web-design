@@ -485,10 +485,6 @@ section.home{
         background: -moz-linear-gradient(left, hsla(0, 0%, 60%, 1) 40%, transparent 120%);
         background: linear-gradient(to right, hsla(0, 0%, 60%, 1) 40%, transparent 120%);
     }
-    #home-promo li a.thumb img{
-        width: auto;
-        /*max-width: 300px;*/
-    }
     #home-left-column{
         width: calc(100% - 23px);
         float: none;
@@ -523,4 +519,10 @@ section.home{
         position: relative;
     }
 
+}
+
+@media all and (min-width: 505px) and (max-width: 799px) {
+    #home-promo li a.thumb img {
+        width: auto;
+    }
 }
