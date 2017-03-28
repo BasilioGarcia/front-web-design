@@ -126,20 +126,23 @@ section{
     min-height: -moz-calc(100% - 215px);
     min-height: calc(100% - 215px);
     background-color: hsla(0, 0%, 100%, 1);
-    background-image: url("../img/bg-section3.png");
+    /*background-image: url("../img/bg-section3.png");
     background-position: left top;
-    background-repeat: repeat-y;
+    background-repeat: repeat-y;*/
+    background-image: url("../img/bg-section.png"), url("../img/bg-section2.png"), url("../img/bg-section3.png");
+    background-position: top, left top, left top;
+    background-repeat: repeat-x, no-repeat, repeat-y;
     overflow: auto;
 }
 article{
     overflow: auto;
     height: 100%;
     position: relative;
-    background-color: #FFF;
+    /*background-color: #FFF;*/
 }
-.home article{
+/*.home article{
     background-color: transparent;
-}
+}*/
 /* FOOTER */
 footer{
     width: 100%;
@@ -290,10 +293,12 @@ section.home{
     float: left;
     padding-top: 3%;
     text-align: left;
+    margin-top: 30px;
 }
 .column-left{
     padding-left: 3%;
     padding-right: 3%;
+    background: #FFF;
 }
 .column-left p, .column-right p{
     clear: both;
