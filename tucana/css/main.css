@@ -126,7 +126,7 @@ section{
     min-height: -moz-calc(100% - 215px);
     min-height: calc(100% - 215px);
     background-color: hsla(0, 0%, 100%, 1);
-    background-image: url("../img/bg-section2.png");
+    background-image: url("../img/bg-section3.png");
     background-position: left top;
     background-repeat: repeat-y;
     overflow: auto;
@@ -135,6 +135,10 @@ article{
     overflow: auto;
     height: 100%;
     position: relative;
+    background-color: #FFF;
+}
+.home article{
+    background-color: transparent;
 }
 /* FOOTER */
 footer{
@@ -279,6 +283,65 @@ section.home{
     font-size: 2em;
     font-weight: normal;
 }
+
+/* GENERIC SECTIONS */
+.column-left, .column-right{
+    width: 47%;
+    float: left;
+    padding-top: 3%;
+    text-align: left;
+}
+.column-left{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.column-left p, .column-right p{
+    clear: both;
+    font-size: 2.2em;
+    font-family: "Playfair Display", serif;
+    color: #000;
+    text-shadow: 1px 1px 0px #E1EBEC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 2em;
+    text-align: justify;
+}
+.column-left h2, .column-right h2{
+    display: block;
+    height: 43px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.column-left h2{
+    float: left;
+    padding: 0 0 9px 9px;
+    background: url(../img/bg-title-left.png) left bottom no-repeat;
+}
+.column-right h2{
+    float: right;
+    padding: 0 9px 9px 0;
+    background: url(../img/bg-title-right.png) right bottom no-repeat;
+}
+.column-left h2 span, .column-right h2 span{
+    font-family: "Playfair Display", serif;
+    display: block;
+    height: 43px;
+    text-align: center;
+    background-color: #778e96;
+    font-size: 2.2em;
+    color: #fff;
+    vertical-align: middle;
+    line-height: 2em;
+    padding-left: 8px;
+}
+.column-left h2 span{
+    padding-right: 8px;
+}
+.column-right h2 span{
+    padding-left: 8px;
+}
+
 /* MEDIA QUERIES */
 @media all and (min-width: 1601px) and (max-width: 1850px) {
     .inner-layout, .home-layout{
