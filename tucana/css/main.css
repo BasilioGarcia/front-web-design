@@ -294,11 +294,11 @@ section.home{
     padding-top: 3%;
     text-align: left;
     margin-top: 30px;
+    background: #FFF;
 }
 .column-left{
     padding-left: 3%;
     padding-right: 3%;
-    background: #FFF;
 }
 .column-left p, .column-right p{
     clear: both;
@@ -346,7 +346,19 @@ section.home{
 .column-right h2 span{
     padding-left: 8px;
 }
-
+.photo{
+    clear: both;
+    display: block;
+    width: 100%;
+    background: #E5E5E5;
+    text-align: center;
+}
+.photo img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 650px;
+}
 /* MEDIA QUERIES */
 @media all and (min-width: 1601px) and (max-width: 1850px) {
     .inner-layout, .home-layout{
