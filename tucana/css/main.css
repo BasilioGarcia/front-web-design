@@ -67,18 +67,18 @@ html, body{
 #social-menu li.fb a{
     width: 13px;
     height: 25px;
-    background: url("../img/facebook.png") no-repeat 1px 0px;
+    background: url("../img/template/facebook.png") no-repeat 1px 0px;
 }
 #social-menu li.fb a:hover{
-    background: url("../img/facebook.png") no-repeat -12px 0px;
+    background: url("../img/template/facebook.png") no-repeat -12px 0px;
 }
 #social-menu li.cart a{
     width: 26px;
     height: 25px;
-    background: url("../img/cart.png") no-repeat 0px 0px;
+    background: url("../img/template/cart.png") no-repeat 0px 0px;
 }
 #social-menu li.cart a:hover{
-    background: url("../img/cart.png") no-repeat -26px 0px;
+    background: url("../img/template/cart.png") no-repeat -26px 0px;
 }
 header{
     text-align: left;
@@ -129,7 +129,7 @@ section{
     /*background-image: url("../img/bg-section3.png");
     background-position: left top;
     background-repeat: repeat-y;*/
-    background-image: url("../img/bg-section.png"), url("../img/bg-section2.png"), url("../img/bg-section3.png");
+    background-image: url("../img/template/bg-section.png"), url("../img/template/bg-section2.png"), url("../img/template/bg-section3.png");
     background-position: top, left top, left top;
     background-repeat: repeat-x, no-repeat, repeat-y;
     overflow: auto;
@@ -169,7 +169,7 @@ footer ul li a:hover{
 }
 /* HOME */
 section.home{
-    background-image: url("../img/bg-section.png"), url("../img/bg-section2.png"), url("../img/bg-section3.png");
+    background-image: url("../img/template/bg-section.png"), url("../img/template/bg-section2.png"), url("../img/template/bg-section3.png");
     background-position: top, left top, left top;
     background-repeat: repeat-x, no-repeat, repeat-y;
 }
@@ -211,7 +211,7 @@ section.home{
     height: 100%;
     position: absolute;
     right: 9px;
-    background: url("../img/bg-right-colum.png") top right no-repeat hsla(192, 26%, 96%, 1);
+    background: url("../img/template/bg-right-colum.png") top right no-repeat hsla(192, 26%, 96%, 1);
 }
 #home-right-column h1{
     float: right;
@@ -219,7 +219,7 @@ section.home{
     min-width: 80%;
     height: 58px;
     padding-bottom: 9px;
-    background: url("../img/bg-title.png") right bottom no-repeat;
+    background: url("../img/template/bg-title.png") right bottom no-repeat;
     margin: 70px -9px 0 0;
 }
 #home-right-column h1 span{
@@ -327,12 +327,12 @@ section.home{
 .column-left h2{
     float: left;
     padding: 0 0 9px 9px;
-    background: url(../img/bg-title-left.png) left bottom no-repeat;
+    background: url(../img/template/bg-title-left.png) left bottom no-repeat;
 }
 .column-right h2{
     float: right;
     padding: 0 9px 9px 0;
-    background: url(../img/bg-title-right.png) right bottom no-repeat;
+    background: url(../img/template/bg-title-right.png) right bottom no-repeat;
 }
 .column-left h2 span, .column-right h2 span{
     font-family: "Playfair Display", serif;
@@ -365,6 +365,62 @@ section.home{
     width: 100%;
     max-width: 650px;
 }
+/* SHOP */
+.shop-list article{
+    min-height: 100%;
+}
+#shop-menu, #shop-products{
+    margin-top: 30px;
+    background: #FFF;
+}
+#shop-products{
+    float: right;
+    width: 80%;
+    min-height: 100%;
+}
+#shop-menu{
+    width: 20%;
+    float: left;
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: block;
+}
+#shop-menu ul:not(.submenu){
+    display: block;
+    width: 85%;
+    padding-left: 15%;
+    padding-top: 15%;
+    overflow: auto;
+}
+#shop-menu ul li span{
+    color: #70838a;
+    /*color: #1a3e94;*/
+    font-size: 2.4em;
+    cursor: pointer;
+}
+#shop-menu ul li span:hover{
+    color: #000;
+}
+#shop-menu .submenu:not(.current){
+    display: none;
+}
+#shop-menu .submenu li{
+    padding-left: 5%;
+}
+#shop-menu .submenu li a{
+    font-size: 2em;
+    color: #70838a;
+}
+#shop-menu .submenu li a:hover{
+    color: #000;
+}
+#shop-menu .submenu li.current a{
+    color: /*#000*/ #ee4332;
+}
+
 /* MEDIA QUERIES */
 @media all and (min-width: 1601px) and (max-width: 1850px) {
     .inner-layout, .home-layout{
@@ -443,10 +499,10 @@ section.home{
         right: 15px;
         top: 10px;
         z-index: 3;
-        background: no-repeat url("../img/hamburger.png") left top;
+        background: no-repeat url("../img/template/hamburger.png") left top;
     }
     label[for="hamburger-menu"]:hover{
-        background: no-repeat url("../img/hamburger.png") -25px top;
+        background: no-repeat url("../img/template/hamburger.png") -25px top;
     }
     #social-menu{
         padding-top: 10px;
