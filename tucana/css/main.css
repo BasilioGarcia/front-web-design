@@ -377,6 +377,7 @@ section.home{
     float: right;
     width: 80%;
     min-height: 100%;
+    box-sizing: border-box;
 }
 #shop-menu{
     width: 20%;
@@ -420,7 +421,92 @@ section.home{
 #shop-menu .submenu li.current a{
     color: /*#000*/ #ee4332;
 }
-
+#shop-products h1{
+    float: right;
+    display: block;
+    height: 43px;
+    padding: 0 9px 9px 0;
+    background: url("../img/template/bg-title-right.png") right bottom no-repeat;
+    margin: 30px 0 0 0;
+}
+#shop-products h1 span{
+    font-family: "Playfair Display", serif;
+    display: block;
+    height: 43px;
+    text-align: center;
+    background-color: #778e96;
+    font-size: 3em;
+    color: #fff;
+    vertical-align: middle;
+    line-height: 2em;
+    padding-left: 8px;
+}
+#products-list{
+    clear: both;
+    padding-top: 20px;
+}
+#products-list li{
+    width: 200px;
+    float: left;
+    padding-left: 4.5%;
+    padding-bottom: 50px;
+}
+#products-list h2{
+    font-size: 2.4em;
+    text-align: left;
+}
+#products-list h2 a{
+    color: #000;
+}
+#products-list h2 a:hover{
+    color: #4a849e;
+}
+#products-list picture{
+    display: block;
+    padding-top: 15px;
+}
+#products-list .info{
+    margin-top: 10px;
+    width: 200px;
+    height: 46px;
+}
+#products-list .price{
+    float: left;
+    width: 50px;
+    font-size: 2.8em;
+    padding: 10px;
+    height: 26px;
+    text-align: center;
+    background: #d4d4d4;
+    color: #000;
+}
+#products-list .small{
+    font-size: 0.8em;
+}
+#products-list .status{
+    float: left;
+    width: 110px;
+    padding: 10px;
+    background: #e2e2e2;
+    color: #5091ad;
+    font-size: 2em;
+    height: 26px;
+    text-align: right;
+}
+#products-list .status span{
+    vertical-align: sub;
+}
+#products-list .buy{
+    font-size: 1.2em;
+}
+#products-list .info:hover .price{
+    color: #FFF;
+    background: #4a849e;
+}
+#products-list .info:hover .status{
+    color: #FFF;
+    background: #5091ad;
+}
 /* MEDIA QUERIES */
 @media all and (min-width: 1601px) and (max-width: 1850px) {
     .inner-layout, .home-layout{
