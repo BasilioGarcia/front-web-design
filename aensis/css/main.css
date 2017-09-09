@@ -1,0 +1,1034 @@
+/* TYPOS */
+
+@font-face{
+    font-family: 'arsenalregular';
+    src: url('../font/arsenal-regular-webfont.woff2') format('woff2'),
+        url('../font/arsenal-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'arsenalbold';
+    src: url('../font/arsenal-bold-webfont.woff2') format('woff2'),
+        url('../font/arsenal-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'arsenalitalic';
+    src: url('../font/arsenal-italic-webfont.woff2') format('woff2'),
+        url('../font/arsenal-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+h1, h2, h3, h4, h5{
+    font-weight: normal;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+label{
+    cursor: default;
+}
+div{
+    box-sizing: border-box;
+}
+/* MAIN */
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    text-align: center;
+    font-family: 'arsenalregular', sans-serif;
+    background-color: hsla(0, 0%, 100%, 1.0);
+    /*border-top: solid 1px hsla(21, 100%, 46%, 1.0);*/
+    /*hsla(40, 95%, 55%, 1.0)*/
+}
+::-moz-selection {
+    background: hsla(21, 100%, 46%, 1.0);
+    color: #FFF;
+}
+::selection {
+    background: hsla(21, 100%, 46%, 1.0);
+    color: #FFF;
+}
+#hamburger-menu, label[for="hamburger-menu"]{
+    display: none;
+}
+header{
+    padding: 60px 0 0 60px;
+    text-align: left;
+    height: 123px;
+    border-left: solid 1px #e7e7ee;
+    border-right: solid 1px #e7e7ee;
+}
+header, section, footer nav{
+    margin: auto;
+    width: 86%;
+    min-width: 960px;
+    max-width: 1400px;
+}
+header, section{
+    background-color: hsla(240, 100%, 99%, 1.0);
+    box-sizing: border-box;
+}
+#logo{
+    float: left;
+}
+#logo:hover{
+    -webkit-filter: opacity(60%) grayscale(100%);
+    filter: opacity(60%) grayscale(100%);
+}
+#main-menu{
+    display: block;
+    float: left;
+    width: calc(100% - 207px - 362px);
+    height: 60px;
+    text-align: center;
+    position: relative;
+}
+#main-menu ul{
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 20%;
+}
+#main-menu ul li{
+    display: block;
+    float: left;
+    padding-left: 40px;
+}
+#main-menu ul li a{
+    font-size: 2.7em;
+    color: hsla(0, 0%, 0%, 1.0);
+    /*transition: color .3s;*/
+}
+#main-menu ul li a:hover{
+    color: #ee2e24;
+}
+#main-menu ul li.current a{
+    color: #ee2e24;
+}
+#main-menu2{
+    float: right;
+}
+#main-menu2 ul li{
+    float: left;
+    padding-left: 1px;
+}
+#main-menu2 ul li a{
+    display: block;
+    background-color: hsla(240, 12%, 85%, 1.0);
+    color: hsla(0, 0%, 100%, 1.0);
+    font-size: 2em;
+    width: 117px;
+    height: 48px;
+    padding: 12px 0 0 63px;
+    /*transition: background-color .3s;*/
+}
+#main-menu2 ul li a span{
+    display: block;
+    font-size: 1.4em;
+    margin-top: -2px;
+}
+#main-menu2 ul li a{
+    background: hsla(240, 12%, 85%, 1.0) url(../img/002-menu-2.png) no-repeat 20px center;
+}
+#main-menu2 ul li:first-child a{
+    background: hsla(240, 12%, 85%, 1.0) url(../img/001-menu-2.png) no-repeat 20px center;
+}
+#main-menu2 ul li a:hover{
+    background-color: /*#F7B235*/ #EA6028;
+}
+section{
+    height: auto;
+    clear: both;
+    padding:0 60px 30px 60px;
+    box-sizing: border-box;
+    border-left: solid 1px #e7e7ee;
+    border-right: solid 1px #e7e7ee;
+    border-bottom: solid 1px #e7e7ee;
+    overflow: auto;
+    min-height: calc(100% - 123px - 40px);
+    /*height: 1500px;*/
+}
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #FFF;
+    text-align: center;
+}
+footer nav{
+    margin: auto;
+    margin-top: 20px;
+}
+footer li{
+    float: left;
+    margin-right: 15px;
+}
+footer a{
+    font-family: 'arsenalbold', sans-serif;
+    font-size: 13px;
+    color: #EA6028;
+    text-shadow: 0 1px 0px #f9f9f9;
+}
+footer a:hover{
+    color: #444;
+}
+footer .copy{
+    font-family: 'arsenalregular', sans-serif;
+    font-size: 13px;
+    color: #EA6028;
+}
+/* HOME */
+#home-d1{
+    margin-top: 115px;
+    width: 576px;
+    height: 391px;
+    display: block;
+    float: right;
+    background: url(../img/008-empresa-seguridad-informatica-espana-1.png) no-repeat;
+    margin-right: 10px;
+}
+
+#home-d2{
+    margin-top: 115px;
+    width: calc(93% - 576px);
+    max-width: 605px;
+    height: auto;
+    min-height: 388px;
+    display: block;
+    float: left;
+    border: solid 1px #e7e7ee;
+    background: #FFF;
+    text-align: left;
+    padding: 20px 20px;
+}
+#home-d2 h1 , #home-d2 h2{
+    text-transform: uppercase;
+    color: #EA6028;
+    font-size: 2.5em;
+    font-family: 'arsenalbold';
+    line-height: 1.6em;
+}
+#home-d2 h2{
+    margin-top: 10px;
+}
+#home-d2 p{
+    color: /*#999*/ #7f8d98;
+    font-size: 2.5em;
+    /*font-family: 'arsenalregular';*/
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7em;
+    margin-top: 10px;
+    text-align: justify;
+}
+#home-topic{
+    float: left;
+    width: calc(93% - 516px);
+    max-width: 665px;
+    background: #ea6028;
+    margin: 60px 0 0 -60px;
+    color: #FFF;
+    font-family: 'arsenalbold', sans-serif;
+    font-size: 3.6em;
+    line-height: 1.6em;
+    text-align: center;
+    vertical-align: middle;
+}
+#home-i1{
+    clear: both;
+    float: left;
+    margin-top: 60px;
+}
+#home-i1:hover{
+    -webkit-filter: contrast(110%) brightness(110%);
+    filter: contrast(110%) brightness(110%);
+}
+#home-d3{
+    width: 576px;
+    height: auto;
+    display: block;
+    /*background-color: blue;*/
+    float: right;
+    margin-top: 60px;
+}
+#home-d3 .left{
+    width: 47%;
+    margin-right: 6%;
+    float: left;
+    text-align: left;
+}
+#home-d3 .right{
+    width: 47%;
+    float: left;
+    text-align: left;
+}
+#home-d3 h2{
+    font-size: 2.5em;
+    line-height: 1.6em;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#home-d3 p{
+    font-size: 2.5em;
+    line-height: 1.6em;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+/* PRODUCTS */
+#products-d1{
+    width: 290px;
+    height: 350px;
+    background: url(../img/015-productos-seguridad-ids-idps.png) no-repeat center center;
+    float: right;
+    margin-top: 95px;
+    margin-right: 40px;
+    /*margin-left: 50px;*/
+}
+#products-d2{
+    width: calc(100% - 400px);
+    float: left;
+    height: auto;
+    margin-top: 105px;
+}
+#products-d2 .left{
+    width: 47%;
+    margin-right: 6%;
+    float: left;
+    text-align: justify;
+}
+#products-d2 .right{
+    width: 47%;
+    float: left;
+    text-align: justify;
+}
+#products-d2 h2{
+    font-size: 2.5em;
+    line-height: 1.6em;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#products-d2 p{
+    font-size: 2.5em;
+    line-height: 1.6em;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+/* SERVICES */
+#services-d1{
+    width: 442px;
+    height: 272px;
+    background: url(../img/011-servicios-consultoria-scada-1.png) no-repeat center center;
+    margin-top: 150px;
+    margin-left: 50px;
+    float: left;
+}
+#services-d2{
+    width: calc(100% - 582px);
+    float: right;
+    height: auto;
+    margin-top: 105px;
+}
+#services-d2 .left{
+    width: 47%;
+    margin-right: 6%;
+    float: left;
+    text-align: justify;
+}
+#services-d2 .right{
+    width: 47%;
+    float: left;
+    text-align: justify;
+}
+#services-d2 h2{
+    font-size: 2.5em;
+    line-height: 1.6em;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#services-d2 p{
+    font-size: 2.5em;
+    line-height: 1.6em;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+
+.service.first{
+    margin-top: 80px;
+}
+
+.service{
+    float: left;
+    clear: both;
+    width: auto;
+    height: auto;
+    display: block;
+    overflow: auto;
+    border: solid 1px #e7e7ee;
+    border-left: solid 1px #F6972C;
+    background: #FFF;
+    margin-bottom: 60px;
+    height: auto;
+    text-align: left;
+    padding: 20px 20px;
+    min-height: 353px;
+}
+
+.service h2{
+    text-transform: uppercase;
+    color: #EA6028;
+    font-size: 2.5em;
+    font-family: 'arsenalbold';
+    line-height: 1.6em;
+}
+.service h3{
+    color: #757577;
+    font-size: 2.8em;
+    font-family: 'arsenalbold';
+    line-height: 1.6em;
+    margin-top: 10px;
+}
+.service p{
+    color: #7f8d98;
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7em;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.services-i{
+    clear: both;
+    float: right;
+    display: block;
+    margin-top: 40px;
+}
+.services-i img{
+    width: auto;
+    height: auto;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+
+/* MEDIA QUERIES */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    header{
+        padding: 30px 0 0 20px;
+    }
+    header, section, footer nav{
+        margin-left: auto;
+        margin-right: auto;
+        width: 98%;
+        min-width: 0;
+    }
+    section{
+        padding:0 20px 30px 20px;
+        text-align: center;
+    }
+    #logo{
+        margin-top: 16px;
+    }
+    #main-menu{
+        width: calc(100% - 140px - 308px);
+        height: 45px;
+    }
+    #main-menu ul{
+        left: 5%
+    }
+    #main-menu ul li{
+        padding-left: 11px;
+    }
+    #main-menu ul li a{
+        font-size: 2.2em;
+    }
+    #main-menu2 ul li a{
+        font-size: 1.7em;
+        padding: 15px 0 0 53px;
+        width: 95px;
+    }
+    #main-menu2 ul li a{
+        background: hsla(240, 12%, 85%, 1.0) url(../img/002-menu-2.png) no-repeat 10px center;
+    }
+    #main-menu2 ul li:first-child a{
+        background: hsla(240, 12%, 85%, 1.0) url(../img/001-menu-2.png) no-repeat 10px center;
+    }
+    #main-menu2 ul li a:hover{
+        background-color:  #EA6028;
+    }
+    /* HOME */
+    #home-d1{
+        margin: 40px auto 0 auto;
+        width: 576px;
+        height: 391px;
+        display: block;
+        float: none;
+        background: url(../img/008-empresa-seguridad-informatica-espana-1.png) no-repeat;
+    }
+    #home-d2{
+        margin: 40px auto 0 auto;
+        width: 96%;
+        max-width: none;
+        height: auto;
+        min-height: 0;
+        display: block;
+        float: none;
+        border: solid 1px #e7e7ee;
+        background: #FFF;
+        text-align: left;
+        padding: 20px 20px;
+    }
+    #home-topic{
+        width: calc(100% + 80px);
+        max-width: none;
+        clear: both;
+    }
+    #home-i1{
+        clear: both;
+        float: none;
+        margin: 50px auto 0 auto;
+    }
+    #home-i1 img{
+        margin-top: 50px;
+    }
+    #home-d3{
+        width: 90%;
+        height: auto;
+        display: block;
+        float: none;
+        margin: 60px auto 0 auto;
+    }
+    #home-d3 .left{
+        width: 47%;
+        margin-right: 6%;
+        float: left;
+        text-align: justify;
+    }
+    #home-d3 .right{
+        width: 47%;
+        float: left;
+        text-align: justify;
+    }
+    #home-d3 h2{
+        font-size: 2.5em;
+        line-height: 1.6em;
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    #home-d3 p{
+        font-size: 2.5em;
+        line-height: 1.6em;
+        color: #666;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 30px;
+    }
+    /* SERVICES */
+    #services-d1{
+        margin: 40px auto 0 auto;
+        float: none;
+    }
+    #services-d2{
+        width: 90%;
+        float: none;
+        height: auto;
+        margin: 60px auto 0 auto;
+    }
+    .service.first{
+        margin-top: 40px;
+    }
+    .services-i{
+        clear: both;
+        float: right;
+        display: block;
+        margin-top: 0px;
+    }
+
+
+
+}
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+    header{
+        padding: 30px 0 0 30px;
+    }
+    header, section, footer nav{
+        margin-left: auto;
+        margin-right: auto;
+        width: 98%;
+    }
+    section{
+        padding:0 30px 30px 30px;
+    }
+    #main-menu{
+        width: calc(100% - 207px - 308px);
+    }
+    #main-menu ul{
+        left: 7%
+    }
+    #main-menu ul li{
+        padding-left: 20px;
+    }
+    #main-menu ul li a{
+        font-size: 2.5em;
+    }
+    #main-menu2 ul li a{
+        font-size: 1.8em;
+        padding: 15px 0 0 53px;
+        width: 100px;
+    }
+    #main-menu2 ul li a{
+        background: hsla(240, 12%, 85%, 1.0) url(../img/002-menu-2.png) no-repeat 10px center;
+    }
+    #main-menu2 ul li:first-child a{
+        background: hsla(240, 12%, 85%, 1.0) url(../img/001-menu-2.png) no-repeat 10px center;
+    }
+    #main-menu2 ul li a:hover{
+        background-color: /*#F7B235*/ #EA6028;
+    }
+    #home-d1{
+        margin-top: 160px;
+        width: 500px;
+        height: 339px;
+        display: block;
+        float: right;
+        background: url(../img/008-empresa-seguridad-informatica-espana-3.png) no-repeat;
+        margin-right: -10px;
+    }
+    #home-d2{
+        margin-top: 75px;
+        width: calc(93% - 450px);
+    }
+    #home-topic{
+        width: calc(100% + 90px);
+        max-width: none;
+        clear: both;
+    }
+    #home-d3{
+        float: none;
+        width: auto;
+        margin-right: -15px;
+    }
+    #home-d3 .left{
+        width: 48%;
+        margin-right: 0;
+        margin-left: 4%;
+        margin-top: 60px;
+    }
+    #home-d3 .right{
+        clear: both;
+        width: 96%;
+        margin-top: -10px;
+    }
+
+
+}
+@media all and (min-width: 1280px) and (max-width: 1359px) {
+    header{
+        padding: 40px 0 0 40px;
+    }
+    header, section, footer nav{
+        margin-left: auto;
+        margin-right: auto;
+        width: 97%;
+        min-width: 960px;
+        max-width: 1400px;
+    }
+    section{
+        padding:0 40px 30px 40px;
+    }
+    #main-menu ul{
+        left: 20%
+    }
+    /* HOME */
+    #home-d1{
+        margin-top: 100px;
+        width: 500px;
+        height: 339px;
+        display: block;
+        float: right;
+        background: url(../img/008-empresa-seguridad-informatica-espana-3.png) no-repeat;
+        margin-right: 0;
+    }
+    #home-d2{
+        margin-top: 75px;
+        width: calc(93% - 460px);
+    }
+    #home-topic{
+        width: calc(93% - 400px);
+        clear: both;
+    }
+    #home-d3{
+        width: 536px;
+        margin-right: -10px;
+    }
+    #home-d3 .left{
+        width: 48%;
+        margin-right: 4%;
+    }
+    #home-d3 .right{
+        width: 48%;
+    }
+    /* SERVICES */
+
+}
+@media all and (min-width: 1360px) and (max-width: 1439px) {
+    header{
+        padding: 40px 0 0 40px;
+    }
+    header, section, footer nav{
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        min-width: 960px;
+        max-width: 1400px;
+    }
+    section{
+        padding:0 40px 30px 40px;
+    }
+    #main-menu ul{
+        left: 15%
+    }
+    /* HOME */
+    #home-d1{
+        margin-top: 140px;
+        width: 500px;
+        height: 339px;
+        display: block;
+        float: right;
+        background: url(../img/008-empresa-seguridad-informatica-espana-3.png) no-repeat;
+        margin-right: 30px;
+    }
+    #home-d2{
+        width: calc(93% - 490px);
+    }
+    #home-topic{
+        width: calc(93% - 430px);
+        clear: both;
+    }
+    #home-d3{
+        width: 556px;
+    }
+    /* SERVICES */
+}
+@media all and (min-width: 1440px) and (max-width: 1599px) {
+    header, section, footer nav{
+        margin-left: auto;
+        margin-right: auto;
+        width: 94%;
+        min-width: 960px;
+        max-width: 1400px;
+    }
+    #main-menu ul{
+        left: 15%
+    }
+    /* HOME */
+    #home-d1{
+        margin-right: 0;
+    }
+    #home-d2{
+        width: calc(93% - 540px);
+    }
+    #home-topic{
+        width: calc(93% - 480px);
+    }
+    /* SERVICES */
+}
+
+
+@media all and (min-width: 1600px) and (max-width: 1679px) {
+    #main-menu ul{
+        left: 14%
+    }
+    /* HOME */
+    #home-d2{
+        width: calc(93% - 562px);
+    }
+    #home-topic{
+        width: calc(93% - 502px);
+    }
+    /* SERVICES */
+}
+@media all and (min-width: 1680px) and (max-width: 1919px) {
+    #main-menu ul{
+        left: 15%
+    }
+    /* HOME */
+    /* SERVICES */
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+    #hamburger-menu{
+        display: block;
+        position: absolute;
+        right: 80px;
+        top: 40px;
+        z-index: 4;
+        clip-path: inset(20px 20px);
+    }
+    label[for="hamburger-menu"]{
+        display: block;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        position: fixed;
+        right: 20px;
+        top: 10px;
+        z-index: 3;
+        background: no-repeat url("../img/000-hamburger.png") left top;
+    }
+    label[for="hamburger-menu"]:hover{
+        background: no-repeat url("../img/000-hamburger.png") -25px top;
+    }
+    #media-bg-menu{
+        height: 65px;
+        position: fixed;
+        z-index: 2;
+        background-color: hsla(240, 100%, 99%, 1.0);
+        overflow: auto;
+        margin: auto;
+    }
+    #media-bg-menu, header, section{
+        width: 100%;
+        display: block;
+        min-width: 0 !important;
+        max-width: none !important;
+    }
+    header{
+        max-width: 100%;
+        position: fixed;
+        padding: 0px;
+        top: 65px;
+        z-index: 3;
+        height: auto;
+        border: none;
+    }
+    #logo{
+        display: block;
+        width: 100px;
+        height: 29px;
+        margin-top: -58px;
+        margin-left: 10px;
+        position: fixed;
+    }
+    #main-menu{
+        position: absolute;
+        width: 200px;
+        height: auto;
+        top: 0px;
+        z-index: 2;
+        float: right;
+        right: -200px;
+        border-top: 1px solid #ebebeb;
+        background: #FFF;
+        padding: 0;
+        margin: 0;
+    }
+    #main-menu ul{
+        bottom: auto;
+        padding: 0;
+        left: 15px;
+    }
+    #main-menu ul li{
+        float: none;
+        padding: 0;
+        text-align: left;
+        margin-top: 3px;
+    }
+    #main-menu ul li:first-child{
+        margin-top: 15px;
+    }
+    #main-menu ul li a {
+        display: block;
+        background-color: hsla(240, 12%, 85%, 1.0);
+        color: hsla(0, 0%, 100%, 1.0);
+        font-size: 2.8em;
+        width: 117px;
+        height: 42px;
+        padding: 18px 0 0 63px;
+    }
+    #main-menu ul li:nth-child(1) a{
+        background: hsla(240, 12%, 85%, 1.0) url(../img/004-menu-1.png) no-repeat 20px center;
+    }
+    #main-menu ul li:nth-child(2) a{
+        background: hsla(240, 12%, 85%, 1.0) url(../img/003-menu-1.png) no-repeat 20px center;
+    }
+    #main-menu ul li:nth-child(3) a{
+        background: hsla(240, 12%, 85%, 1.0) url(../img/007-menu-1.png) no-repeat 20px center;
+    }
+    #main-menu ul li:nth-child(4) a{
+        background: hsla(240, 12%, 85%, 1.0) url(../img/005-menu-1.png) no-repeat 20px center;
+    }
+    #main-menu ul li:nth-child(5) a{
+        background: hsla(240, 12%, 85%, 1.0) url(../img/006-menu-1.png) no-repeat 20px center;
+    }
+    #main-menu ul li a:hover{
+        background-color: /*#F7B235*/ #EA6028;
+        color: #fff;
+    }
+    #main-menu ul li.current a{
+        background-color: /*#F7B235*/ #EA6028;
+        color: #fff;
+    }
+    #main-menu2{
+        position: absolute;
+        width: 185px;
+        height: auto;
+        top: 328px;
+        z-index: 2;
+        float: right;
+        right: -200px;
+    }
+    #main-menu2 ul li{
+        float: none;
+        padding-left: 0;
+        margin-top: 3px;
+    }
+    header #main-menu, header #main-menu2, section{
+        transition: right 0.2s;
+    }
+    #hamburger-menu:checked ~ header #main-menu{
+        right: 0;
+    }
+    #hamburger-menu:checked ~ header #main-menu2{
+        right: 0;
+    }
+    #hamburger-menu:checked ~ section {
+        right: 200px;
+        border-right: 1px solid #ebebeb;
+    }
+    section{
+        top: 65px;
+        width: 100%;
+        position: relative;
+        right: 0;
+        z-index: 1;
+        /*min-height: calc(100% - 75px);*/
+        background: hsla(240, 100%, 99%, 1.0);
+        padding: 0;
+        border: none;
+        text-align: center;
+        min-height: calc(100% - 64px - 40px);
+    }
+    footer{
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 4;
+        top: 65px;
+        padding: 0 7px 0 7px;
+    }
+    footer nav{
+        width: 100%;
+        min-width: 0;
+    }
+    footer ul{
+        width: 100%;
+    }
+    footer a{
+        font-size: 2em;
+    }
+    /* HOME */
+    #home-d1{
+        margin: 0px auto 0 auto;
+        float: none;
+        width: 315px;
+        height: 224px;
+        background: url(../img/008-empresa-seguridad-informatica-espana-2.png) no-repeat left bottom;
+    }
+    #home-d2{
+        float: none;
+        margin: 25px auto 0 auto;
+        width: 90%;
+        height: auto;
+    }
+    #home-i1{
+        float: none;
+        margin: 0px auto 0 auto;
+    }
+    #home-i1 img{
+        display: block;
+        width: 90%;
+        height: auto;
+        float: none;
+        margin: 40px auto 0 auto;
+    }
+    #home-d3{
+        float: none;
+        margin: 25px auto 0 auto;
+        width: 90%;
+    }
+    #home-d3 .left{
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+    #home-d3 .right{
+        float: none;
+        width: 100%;
+    }
+    /* SERVICES */
+    #services-d1{
+        margin: 10px auto 0 auto;
+        float: none;
+        width: 315px;
+        height: 185px;
+        background: url(../img/011-servicios-consultoria-scada-2.png) no-repeat left bottom;
+    }
+    #services-d2{
+        float: none;
+        margin: 25px auto 0 auto;
+        width: 90%;
+    }
+    #services-d2 .left{
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+    #services-d2 .right{
+        float: none;
+        width: 100%;
+    }
+    .service{
+        padding-left: 10px;
+        padding-right: 10px;
+        border-left: none;
+        border-right: none;
+    }
+    .services-i{
+        clear: both;
+        float: right;
+        display: block;
+        margin-top: 0px;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .services-i img{
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+        padding-bottom: 20px;
+        margin: auto;
+    }
+}

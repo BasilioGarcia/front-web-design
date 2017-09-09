@@ -53,6 +53,7 @@ html, body{
     height: 30px;
     text-align: center;
     padding-top: 5px;
+    /* size 100% 35px */
 }
 #social-menu li{
     float: right;
@@ -85,6 +86,7 @@ header{
     padding-top: 20px;
     height: 130px;
     position: relative;
+    /* size 65%(de .inner-layout) 150px */
 }
 #logo{
     display: block;
@@ -126,29 +128,33 @@ section{
     min-height: -moz-calc(100% - 215px);
     min-height: calc(100% - 215px);
     background-color: hsla(0, 0%, 100%, 1);
-    /*background-image: url("../img/bg-section3.png");
-    background-position: left top;
-    background-repeat: repeat-y;*/
     background-image: url("../img/template/bg-section.png"), url("../img/template/bg-section2.png"), url("../img/template/bg-section3.png");
     background-position: top, left top, left top;
     background-repeat: repeat-x, no-repeat, repeat-y;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
 }
 article{
     overflow: auto;
-    height: 100%;
     position: relative;
-    /*background-color: #FFF;*/
+    flex: 1;
+    background-color: #FFF;
 }
-/*.home article{
-    background-color: transparent;
-}*/
+.article-bg{
+    width: 100%;
+    height: calc(100% - 30px);
+    margin-top: 30px;
+    background: #FFF;
+}
 /* FOOTER */
 footer{
     width: 100%;
     height: 30px;
     background: hsla(0, 0%, 0%, 1);
     clear: both;
+    /* size 100% 30px */
 }
 footer ul{
     margin: auto;
@@ -172,6 +178,10 @@ section.home{
     background-image: url("../img/template/bg-section.png"), url("../img/template/bg-section2.png"), url("../img/template/bg-section3.png");
     background-position: top, left top, left top;
     background-repeat: repeat-x, no-repeat, repeat-y;
+    padding-top: 0;
+}
+section.home article{
+    background-color: transparent;
 }
 .home-layout{
     display: block;
@@ -295,16 +305,9 @@ section.home{
     background: #FFF;
     padding-right: 3%;
     margin-top: 30px;
-    padding-top: 3%;
 }
 .column-left{
     padding-left: 3%;
-}
-.column-right{
-    right: 0px;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
 }
 .column-left p, .column-right p{
     clear: both;
@@ -356,7 +359,7 @@ section.home{
     clear: both;
     display: block;
     width: 100%;
-    background: #E5E5E5;
+    background: hsla(240, 21%, 92%, 1.0);
     text-align: center;
 }
 .photo img{
@@ -376,7 +379,7 @@ section.home{
 #shop-products{
     float: right;
     width: 80%;
-    min-height: 100%;
+    min-height: calc(100% - 30px);
     box-sizing: border-box;
 }
 #shop-menu{
@@ -394,7 +397,7 @@ section.home{
     width: 85%;
     padding-left: 15%;
     padding-top: 15%;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 #shop-menu ul li span{
     color: #70838a;
@@ -429,7 +432,7 @@ section.home{
     background: url("../img/template/bg-title-right.png") right bottom no-repeat;
     margin: 30px 0 0 0;
 }
-#shop-products h1 span{
+#shop-products h1 span.all{
     font-family: "Playfair Display", serif;
     display: block;
     height: 43px;
@@ -507,6 +510,11 @@ section.home{
     color: #FFF;
     background: #5091ad;
 }
+.product{
+    clear: both;
+    padding-top: 20px;
+}
+
 /* MEDIA QUERIES */
 @media all and (min-width: 1601px) and (max-width: 1850px) {
     .inner-layout, .home-layout{
@@ -527,6 +535,7 @@ section.home{
     .inner-layout, .home-layout{
         width: 95%;
     }
+    /* HOME */
     #home-left-column{
         width: 36%;
     }
@@ -559,6 +568,13 @@ section.home{
     #home-promo li:first-of-type a.thumb img{
         width: 100%;
         max-width: 300px;
+    }
+    /* GENERIC SECTIONS */
+    .column-left, .column-right{
+       float: none;
+       width: 94%;
+       padding-left: 3%;
+       padding-right: 3%;
     }
 }
 @media all and (min-width: 320px) and (max-width: 799px) {
@@ -637,7 +653,7 @@ section.home{
     #main-menu li a:hover{
         color: #000;
     }
-    #hamburger-menu + label, section, #social-menu ul, header #main-menu{
+    header #main-menu, section{
         transition: right 0.2s;
     }
     #hamburger-menu:checked ~ header #main-menu{
@@ -646,6 +662,14 @@ section.home{
     #hamburger-menu:checked ~ section {
         right: 200px;
         box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    }
+    /* SHOP */
+    #shop-products h1 {
+        margin: 15px 0 0 0;
+    }
+    #shop-products h1 span.all{
+        font-size: 2em;
+        line-height: 3em;
     }
     /* RESET-HARD */
     section{
@@ -725,19 +749,12 @@ section.home{
         line-height: 1.6em;
         padding-top: 15px;
     }
+    /* GENERIC SECTIONS */
     .column-left, .column-right{
-        width: calc(100% - 13px);
         float: none;
-        margin-top: 15px;
-        padding: 0 0 0 5px;
-    }
-    .column-right{
-        margin-top: 0px;
-        position: inherit;
-    }
-    .column-left h2 span, .column-right h2 span {
-        font-size: 1.45em;
-        line-height: 2.9em;
+        width: 94%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     footer{
         position: relative;
@@ -760,7 +777,12 @@ section.home{
         height: 100%;
         position: relative;
     }
-
+}
+@media all and (min-width: 320px) and (max-width: 375px) {
+    /* SHOP */
+    #shop-products h1 span.parent{
+        display: none;
+    }
 }
 
 @media all and (min-width: 505px) and (max-width: 799px) {
@@ -769,7 +791,7 @@ section.home{
     }
 }
 
-@media all and (min-width: 820px) {
+@media all and (min-width: 820px) and (max-width: 900px){
     .column-left, .column-right{
         width: 47%;
         float: left;
@@ -783,3 +805,4 @@ section.home{
         padding-right: 0;
     }
 }
+
